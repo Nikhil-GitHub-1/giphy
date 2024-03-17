@@ -2,8 +2,10 @@
 import React from 'react';
 import { Switch } from 'react-native';
 import { useTheme } from '../context/ThemeContext';
+import { useThemeColor } from '../hooks/useThemeColor';
 
 export const ThemeToggler = () => {
   const { theme, toggleTheme } = useTheme();
-  return <Switch value={theme === 'dark'} onValueChange={toggleTheme} />;
+  const {Colors} = useThemeColor();
+  return <Switch tintColor={Colors.bgColor} thumbColor={Colors.primary} value={theme === 'dark'} onValueChange={toggleTheme} />;
 };
