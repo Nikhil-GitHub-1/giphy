@@ -55,7 +55,7 @@ export const SearchInput = ({
           onClear?.();
           setShowClearIcon(false);
         }}>
-          <CrossIcon />
+          <CrossIcon color={Colors.primary} />
         </Pressable>
       )}
     </Pressable>
