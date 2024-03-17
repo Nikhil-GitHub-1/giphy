@@ -54,6 +54,8 @@ export default SearchBar;
 
 const styles = StyleSheet.create({
   container: {
-    paddingVertical: 12,
+    marginTop: 12,
+    marginBottom:4,
+    paddingHorizontal: 2,
   },
 });
